@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JukeBox</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div id="contents">
+    <div id="video">
+      <iframe id="player" width="800" height="450" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="playlist"></div>
+    <div id="search">
+      <div id="search_result"></div>
+    </div>
+  </div>
+  <div id="menu">
+    <button id="play_mode_button" class="menu_button">
+      <div class="button_icon" style="background-image: url('img/play.png');"></div>
+      <div class="button_label">video</div>
+    </button>
+    <button id="playlist_mode_button" class="menu_button">
+      <div class="button_icon" style="background-image: url('img/playlist.png');"></div>
+      <div class="button_label">playlist</div>
+    </button>
+    <input id="search_text" type="text" placeholder="keywords">
+    <button id="search_button" class="menu_button">
+      <div class="button_icon" style="background-image: url('img/search.png');"></div>
+      <div class="button_label">search</div>
+    </button>
+    <button id="skip_button" class="menu_button">
+      <div class="button_icon" style="background-image: url('img/skip.png');"></div>
+      <div class="button_label">skip</div>
+    </button>
+  </div>
+</body>
+</html>

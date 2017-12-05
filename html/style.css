@@ -1,0 +1,267 @@
+body {
+    font-family: Meiryo; font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+}
+
+button {
+    font-family: Meiryo; font-size: 12px;
+}
+
+input {
+    font-family: Meiryo;
+}
+
+#contents {
+    display: block;
+    width: 800px;
+    height: 550px;
+}
+
+#menu {
+    position: relative;
+    display: block;
+    width: 800px;
+    height: 50px;
+    background-color: #202020;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_button {
+    position: absolute;
+    width: 50px;
+    height: 44px;
+}
+
+.button_icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button_label {
+    display: block;
+    font-size: 6px;
+    padding: 0;
+    margin: 0;
+}
+
+#play_mode_button {
+    top: 3px;
+    left: 25px;
+}
+
+#playlist_mode_button {
+    top: 3px;
+    left: 80px;
+}
+
+#search_text { 
+    position: absolute;
+    box-sizing: border-box;
+    width: 400px;
+    height: 44px;
+    font-size: 14px;
+    padding: 0 5px;
+    border:0;
+    border: solid 1px #808080;
+    border-radius: 3px;
+    box-shadow: inset 1px 4px 9px -6px rgba(0, 0, 0, 0.5);
+    top: 3px;
+    left: 200px;
+}
+
+input:focus {
+    border: solid 1px #eea34a;
+}
+
+#search_button {
+    top: 3px;
+    left: 605px;
+}
+
+#skip_button {
+    top: 3px;
+    right: 25px;
+}
+
+#player {
+    display: block;
+    width: 800px;
+    height: 450px;
+    background-color: #000000;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 40;
+}
+
+#video {
+    display: block;
+    width: 800px;
+    height: 450px;
+    background-color: #000000;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 30;
+}
+
+#playlist {
+    display: none;
+    width: 0;
+    height: 0;
+    background-color: #000000;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 20;
+}
+
+#search {
+    display: none;
+    width: 0;
+    height: 0;
+    background-color: #d0d0d0;
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+.video {
+    display: inline-block;
+    position: relative;
+    width: 159px;
+    height: 109px;
+    margin: 0 1px 1px 0;
+    vertical-align: top;
+}
+
+.video_number {
+    display: block;
+    position: absolute;
+    lef: 10px;
+    top: 10px;
+    z-index: 10;
+    color: white;
+}
+
+.video_thumbnail {
+    position: relative;
+    margin: 3px 10px 1px 10px;
+}
+
+.modal_filter {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #808080;
+    z-index: 90;
+    left: 0px;
+    top: 0px;
+    opacity: 0.8;
+}
+
+.video_dialog {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    left: 150px;
+    padding: 10px;
+    top: 40px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.dialog_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.dialog_move_button {
+    position: absolute;
+    z-index: 100;
+    right: 260px;
+    bottom: 5px;
+}
+
+.dialog_youtube_button {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    right: 195px;
+    bottom: 5px;
+}
+
+.dialog_remove_button {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    right: 100px;
+    bottom: 5px;
+}
+
+.dialog_close_button {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    right: 5px;
+    bottom: 5px;
+}
+
+#search_result {
+    display: block;
+    width: 800px;
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.result {
+    display: block;
+    position: relative;
+    height: 100px;
+    font-family: Meiryo;
+    font-size: 15px;
+}
+
+.result_img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.result_title {
+    position: absolute;
+    left: 125px;
+    top: 0px;
+}
+
+.result_duration {
+    position: absolute;
+    left: 85px;
+    top: 70px;
+    color: #ffffff;
+    font-family: Meiryo;
+    font-size: 12px;
+}
+
+.result_button {
+    position: absolute;
+    left: 125px;
+    top: 44px;
+}

@@ -61,11 +61,19 @@ function attachDetail(result) {
 
     $('#result' + sr.idx + 'duration').html(duration);
 
-    $('#result' + sr.idx + 'button').click(
+    $('#result' + sr.idx + 'add_button').click(
 	{videoId: videoId, duration: duration, title: sr.title},
         function(event) {
 	    let data = event.data;
 	    send('add_video ' + data.videoId + ' ' + data.duration + ' ' + data.title);
+	}
+    );
+
+    $('#result' + sr.idx + 'youtube_button').click(
+	{videoId: videoId, duration: duration, title: sr.title},
+	function(event) {
+	    let data = event.data;
+	    window.open('https://www.youtube.com/watch?v=' + data.videoId);
 	}
     );
 }
@@ -103,9 +111,13 @@ function listSearchResult(result) {
 		.attr('id', 'result' + i + 'duration')
 		.addClass('result_duration'),
 	    $('<button>')
-		.attr('id', 'result' + i + 'button')
-		.addClass('result_button')
-		.html('<div class="button_icon" style="background-image: url(img/plus.png);"></div><div class="button_label">add</div>'));
+		.attr('id', 'result' + i + 'add_button')
+		.addClass('result_add_button')
+		.html('<div class="button_icon" style="background-image: url(img/plus.png);"></div><div class="button_label">add</div>'),
+	    $('<button>')
+		.attr('id', 'result' + i + 'youtube_button')
+		.addClass('result_youtube_button')
+		.html('<div class="button_icon" style="background-image: url(img/youtube.png);"></div><div class="button_label">youtu</div>'));
 
 	$('#search_result').append(result);
 	

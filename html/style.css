@@ -260,8 +260,14 @@ input:focus {
     font-size: 12px;
 }
 
-.result_button {
+.result_add_button {
     position: absolute;
     left: 125px;
+    top: 44px;
+}
+
+.result_youtube_button {
+    position: absolute;
+    left: 170px;
     top: 44px;
 }
